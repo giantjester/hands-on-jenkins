@@ -9,6 +9,7 @@ pipeline {
 
 	environment {
 		PYTHONPATH = "${WORKSPACE}/section_4/code/cd_pipeline"
+		PATH = "$PATH;C:\\Users\\Mark\\AppData\\Local\\Programs\\Python\\Python37-32;C:\\Users\\Mark\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts"
 	}
 
     stages {
@@ -101,7 +102,7 @@ def approve() {
 
 def runUnittests() {
 	sh "pip3 install --no-cache-dir -r ./section_4/code/cd_pipeline/requirements.txt"
-	sh "python3 section_4/code/cd_pipeline/tests/test_flask_app.py"
+	sh "python section_4/code/cd_pipeline/tests/test_flask_app.py"
 }
 
 
