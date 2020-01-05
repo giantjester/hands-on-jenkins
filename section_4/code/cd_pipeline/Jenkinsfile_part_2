@@ -9,6 +9,7 @@ pipeline {
 
 	environment {
 		PYTHONPATH = "${WORKSPACE}/section_4/code/cd_pipeline"
+		PATH = "$PATH;C:\Users\Mark\AppData\Local\Programs\Python\Python37-32;C:\Users\Mark\AppData\Local\Programs\Python\Python37-32\Scripts"
 	}
 
 	stages {
